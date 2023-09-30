@@ -62,7 +62,7 @@ export default function CaptionCarousel() {
   ]
 
   return (
-    <Box position={'relative'} height={'600px'} width={'full'} overflow={'hidden'}>
+    <Box position={'relative'} height={'400px'} width={'full'} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"

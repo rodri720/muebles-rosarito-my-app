@@ -1,9 +1,10 @@
 // eslint-disable-next-line
-import Landing from './LandingPage/LandingPage';
+import Landing from './components/LandingPage/LandingPage';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './Home/Home';
-import Detail from './Detail/Detail';
-import Footer from './Footer/Footer';
+import Home from './components/Home/Home';
+import Detail from './components/Detail/Detail';
+import Footer from './components/Footer/Footer';
+import About from './components/About/About';
 
 
 
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/detail:id" element={<Detail />} />
       <Route path="/footer" element={<Footer />} />
+      <Route path="/About" element={<About />} />
     </Routes>
 
     </div>

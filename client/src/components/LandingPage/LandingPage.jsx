@@ -10,7 +10,7 @@ export default function LandingPage() {
         <Carousel />
         <Footer />
         
-      <h1>Somos una empresa familiar con más de 20 años de experiencia</h1>
+      <h1></h1>
     </div>
   )
 }

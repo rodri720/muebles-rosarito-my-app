@@ -61,18 +61,14 @@ export default function SmallCentered() {
         align={'center'}>
         <Logo />
         <Stack direction={'row'} spacing={6}>
-          <Box as="a" href={'#'}>
+          <Box as="a" href={'/Home'}>
             Home
           </Box>
-          <Box as="a" href={'#'}>
+          <Box as="a" href={'/About'}>
             About
           </Box>
-          <Box as="a" href={'#'}>
-            Blog
-          </Box>
-          <Box as="a" href={'#'}>
-            Contact
-          </Box>
+         
+         
         </Stack>
       </Container>
 

@@ -10,8 +10,9 @@ root.render(
     <ChakraProvider>
   <React.StrictMode>
   <Auth0Provider
-    domain="dev-tqinqrn4chmb6p7m.us.auth0.com"
-    clientId="x1MWv0ubEP7ipYTVkfZVXq2jCrpB4ftL"
+    domain="dev-pkerk343c7ujo0mk.us.auth0.com"
+    clientId="MJvZELFNNwbrzAYBDjP6V5DIUnXblBD3"
+    clientSecret="2DN81sMwu1PIYrkdQSXNCkH6ykV34Qp4PZSThZiVMOlqgknkmrt_3iw3IkiW9ar9"
     authorizationParams={{
       redirect_uri: window.location.origin
     }}
