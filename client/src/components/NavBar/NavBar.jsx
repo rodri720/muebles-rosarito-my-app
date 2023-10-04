@@ -3,16 +3,15 @@ import { Box, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useColo
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from '../images/logo.png';
 import style from '../NavBar/NavBar.module.css';
-import { useNavigate } from 'react-router-dom'; // Importa useNavigate de react-router-dom
-
+import { useNavigate } from 'react-router-dom';
 import Profile from '../Login/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  const [searchText, setSearchText] = useState(''); // Estado para el texto de búsqueda
-  const navigate = useNavigate(); // Importa useNavigate de react-router-dom
+  const [searchText, setSearchText] = useState('');
+  const navigate = useNavigate();
 
   const handleToggleColorMode = () => {
     if (colorMode === 'light') {
@@ -27,7 +26,6 @@ export default function NavBar() {
   };
 
   const handleSearch = () => {
-    // Redirige al componente Home con el texto de búsqueda como parámetro de consulta
     if (searchText) {
       navigate(`/home?search=${searchText}`);
     }
@@ -36,10 +34,9 @@ export default function NavBar() {
   return (
     <div className={style.navbar} style={{ backgroundColor: colorMode === 'light' ? '#FFFFFF' : '#1A202C' }}>
       <div className={style.logo}>
-        <img src={logo} alt="logo" width={'150px'} height={'150px'}/>
+        <img src={logo} alt="logo" width={'150px'} height={'150px'} />
       </div>
       <h1 className={style.title}>Bienvenidos a Muebles Rosarito</h1>
-      
       <div className={style.rightSection}>
         <Box>
           <Button onClick={handleToggleColorMode} rounded={'full'} variant={'link'} cursor={'pointer'} minW={0}>
@@ -72,7 +69,7 @@ export default function NavBar() {
               <br />
               <MenuDivider />
               <MenuItem>muebles-rosarito@gmail.com</MenuItem>
-              <MenuItem>Account Settings</MenuItem>
+              <MenuItem></MenuItem>
               <MenuItem onClick={handleLogout}>Logout</MenuItem>
             </MenuList>
           </Menu>
@@ -87,7 +84,6 @@ export default function NavBar() {
             Login
           </Button>
         )}
-        {/* Campo de búsqueda */}
         <input
           type="text"
           placeholder="Buscar..."

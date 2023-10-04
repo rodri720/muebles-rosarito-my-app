@@ -5,14 +5,16 @@ import App from './App';
 import { ChakraProvider } from '@chakra-ui/react';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+ 
     <ChakraProvider>
   <React.StrictMode>
   <Auth0Provider
-    domain="dev-pkerk343c7ujo0mk.us.auth0.com"
-    clientId="MJvZELFNNwbrzAYBDjP6V5DIUnXblBD3"
-    clientSecret="2DN81sMwu1PIYrkdQSXNCkH6ykV34Qp4PZSThZiVMOlqgknkmrt_3iw3IkiW9ar9"
+    domain="dev-g5p2cfdaidwx2qr2.us.auth0.com"
+    clientId="ot2kjLYIht8Nmi3jtiSgvXbxpSDNeTww"
+    
     authorizationParams={{
       redirect_uri: window.location.origin
     }}
@@ -21,4 +23,5 @@ root.render(
   </Auth0Provider>
   </React.StrictMode>
     </ChakraProvider>
+    
 );

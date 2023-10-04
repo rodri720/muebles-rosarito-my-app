@@ -28,11 +28,13 @@
   width: 50%; /* Ancho del 50% del contenedor */
   display: flex;
   flex-direction: column;
+  margin-left: 0;
   align-items: flex-start; /* Alinea las imágenes y textos al margen izquierdo de la columna */
 }
 
 .left-column {
   margin-left: 0; /* Alinea la columna completamente a la izquierda */
+  align-items: flex-start;
 }
 
 
